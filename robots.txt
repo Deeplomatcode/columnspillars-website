@@ -1,1 +1,4 @@
- 
+User-agent: *
+Allow: /
+
+Sitemap: https://columnsnpillars.co.uk/sitemap.xml
