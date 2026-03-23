@@ -403,6 +403,70 @@
     initContactForm();
     initUrlParamPrefill();
     initSmoothScroll();
+    initLightbox();
   });
 
 }());
+
+  /* ============================================================
+     9. GALLERY LIGHTBOX
+     Opens .gallery-item images in a full-screen overlay
+     ============================================================ */
+
+  /**
+   * Initialises the screenshot gallery lightbox.
+   */
+  function initLightbox() {
+    const overlay = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('lightbox-close');
+    if (!overlay || !lightboxImg) return;
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      lightboxImg.src = '';
+    }
+
+    // Click on gallery items
+    document.querySelectorAll('.gallery-item').forEach(function (item) {
+      var img = item.querySelector('img');
+      if (!img) return;
+
+      item.addEventListener('click', function () {
+        openLightbox(img.src, img.alt);
+      });
+
+      item.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(img.src, img.alt);
+        }
+      });
+    });
+
+    // Close button
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeLightbox);
+    }
+
+    // Click outside image
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeLightbox();
+    });
+
+    // Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  }
