@@ -7,7 +7,9 @@
     "type": "agentStop"
   },
   "then": {
-    "type": "runCommand",
-    "command": "git add . && git commit -m \"Auto-save: work in progress\" && git push origin main"
-  }
+    "type": "askAgent",
+    "prompt": "Save all changes to Git and push to GitHub with the commit message \n\"Specs created — requirements, design, tasks tracked in .kiro/specs/website/\""
+  },
+  "workspaceFolderName": "columnspillars-website",
+  "shortName": "auto-save-to-github"
 }
