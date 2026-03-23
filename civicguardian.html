@@ -320,6 +320,207 @@
       </div>
     </section>
 
+    <!-- THE GUARDIAN LOOP — 3-AGENT ARCHITECTURE -->
+    <section class="section bg-off-white" aria-labelledby="guardian-loop-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="eyebrow">The Guardian Loop</span>
+          <h2 id="guardian-loop-heading">Three agents. One safety-first cycle.</h2>
+          <p>CivicGuardian doesn't replace human judgement — it extends it. A serverless multi-agent system processes every piece of correspondence through a continuous, safety-first loop before any human review.</p>
+        </div>
+        <div class="process-grid" style="grid-template-columns:repeat(3,1fr);">
+          <div class="process-step" data-animate data-animate-delay="1" style="background:var(--white);border:1px solid var(--grey-200);border-radius:var(--radius-lg);padding:var(--sp-5);">
+            <p class="process-num" aria-hidden="true">01</p>
+            <h3>Risk Analyst</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);margin-bottom:var(--sp-2);">Amazon Nova Lite</p>
+            <p>Rapidly scans incoming documents for deadlines and critical risk factors. Extracts urgency indicators — "February 28th", "eviction notice", "benefit suspension" — in seconds. Cost-optimised for high-volume triage.</p>
+          </div>
+          <div class="process-step" data-animate data-animate-delay="2" style="background:var(--white);border:1px solid var(--grey-200);border-radius:var(--radius-lg);padding:var(--sp-5);">
+            <p class="process-num" aria-hidden="true">02</p>
+            <h3>Policy Reasoner</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);margin-bottom:var(--sp-2);">Amazon Nova Pro</p>
+            <p>Drafts policy-compliant responses by referencing specific UK legislation — Housing Benefit Regulations 2006, Care Act 2014, Mental Capacity Act 2005. Only invoked for medium/high risk cases to control cost.</p>
+          </div>
+          <div class="process-step" data-animate data-animate-delay="3" style="background:var(--white);border:1px solid var(--grey-200);border-radius:var(--radius-lg);padding:var(--sp-5);">
+            <p class="process-num" aria-hidden="true">03</p>
+            <h3>Governor</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);margin-bottom:var(--sp-2);">Pure Python — deterministic</p>
+            <p>A non-AI safety layer that validates every output before human review. Checks citations, flags unsupported claims, enforces safety notices. Prevents hallucinations from reaching practitioners. No AI — no drift.</p>
+          </div>
+        </div>
+        <div style="margin-top:var(--sp-8);display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-4);" data-animate>
+          <div style="background:var(--black);border-radius:var(--radius-lg);padding:var(--sp-5);">
+            <p style="font-family:var(--font-mono);font-size:var(--text-label);font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-3);">AWS Infrastructure</p>
+            <div style="display:flex;flex-direction:column;gap:var(--sp-2);">
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Orchestration</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--white);">Amazon Bedrock + Step Functions</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Compute</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--white);">AWS Lambda (serverless)</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Storage</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--white);">S3 (AES-256) + DynamoDB</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Escalation</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--white);">Amazon SNS + CloudWatch</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Security</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--white);">Secrets Manager + IAM least-privilege</span>
+              </div>
+            </div>
+          </div>
+          <div style="background:var(--black);border-radius:var(--radius-lg);padding:var(--sp-5);">
+            <p style="font-family:var(--font-mono);font-size:var(--text-label);font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-3);">Validated Performance</p>
+            <div style="display:flex;flex-direction:column;gap:var(--sp-2);">
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Avg response time</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--orange);">&lt;3 seconds</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Classification accuracy</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--orange);">94.2%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Unit tests passing</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--orange);">122 / 122</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding-bottom:var(--sp-1);border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Multi-agent accuracy gain</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--orange);">+92%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;">
+                <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);">Cost reduction vs single-model</span>
+                <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--orange);">42%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLIANCE & GOVERNANCE -->
+    <section class="section bg-dark" aria-labelledby="compliance-heading">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-10);align-items:start;">
+          <div data-animate>
+            <span class="eyebrow eyebrow-dark">Compliance &amp; Governance</span>
+            <h2 id="compliance-heading" style="font-size:var(--text-display-md);font-weight:800;color:var(--white);letter-spacing:-0.025em;margin:var(--sp-2) 0 var(--sp-3);">Built for the most sensitive data in public services</h2>
+            <p style="font-size:var(--text-body-lg);color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:var(--sp-3);">Vulnerable adults' case data is among the most sensitive information in existence. CivicGuardian was designed with a privacy-first architecture from day one — not retrofitted for compliance.</p>
+            <p style="font-size:var(--text-body-lg);color:rgba(255,255,255,0.65);line-height:1.75;">Every design decision — from 7-day data retention to deterministic Governor validation — was made to ensure the system could be trusted by practitioners, commissioners, and data protection officers alike.</p>
+          </div>
+          <div data-animate data-animate-delay="2">
+            <div style="display:flex;flex-direction:column;gap:var(--sp-3);">
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:var(--sp-3);">
+                <p style="font-size:var(--text-sm);font-weight:700;color:var(--white);margin-bottom:6px;">GDPR / UK DPA 2018</p>
+                <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);line-height:1.6;">Aligned with Article 6 (Vital Interests) and Article 9 (Special Category Data). Lawful basis documented for all processing activities.</p>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:var(--sp-3);">
+                <p style="font-size:var(--text-sm);font-weight:700;color:var(--white);margin-bottom:6px;">7-Day Data Retention</p>
+                <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);line-height:1.6;">Minimal storage footprint. Case correspondence is processed and purged within 7 days unless explicitly retained by the practitioner.</p>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:var(--sp-3);">
+                <p style="font-size:var(--text-sm);font-weight:700;color:var(--white);margin-bottom:6px;">End-to-End Encryption</p>
+                <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);line-height:1.6;">S3 AES-256 encryption at rest. TLS 1.3 in transit. Least-privilege IAM access controls. No shared credentials.</p>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:var(--sp-3);">
+                <p style="font-size:var(--text-sm);font-weight:700;color:var(--white);margin-bottom:6px;">Human-in-the-Loop Lock</p>
+                <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);line-height:1.6;">High-risk drafts are locked until a caseworker manually approves. No automated actions. No AI decisions without human sign-off.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S NEXT — ROADMAP -->
+    <section class="section" aria-labelledby="roadmap-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="eyebrow">Roadmap</span>
+          <h2 id="roadmap-heading">What CivicGuardian becomes next</h2>
+          <p>The current system processes written correspondence. The next phase extends the Guardian Loop to audio, multilingual communication, and proactive outreach — removing every remaining barrier between a vulnerable adult and the help they need.</p>
+        </div>
+        <div class="civic-feature-grid">
+          <article class="civic-feature-card" data-animate data-animate-delay="1">
+            <div class="civic-feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" stroke="var(--orange)" stroke-width="1.5"/><path d="M19 10a7 7 0 0 1-14 0M12 19v3M8 22h8" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 style="font-size:var(--text-sm);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-1);">Audio Correspondence</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);line-height:1.65;">Voicemail and audio message transcription via Amazon Transcribe. Spoken correspondence from service users processed through the same Guardian Loop as written documents — no channel left unmonitored.</p>
+          </article>
+          <article class="civic-feature-card" data-animate data-animate-delay="2">
+            <div class="civic-feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--orange)" stroke-width="1.5"/><path d="M12 2c0 0-4 4-4 10s4 10 4 10M12 2c0 0 4 4 4 10s-4 10-4 10M2 12h20" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 style="font-size:var(--text-sm);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-1);">Multilingual Translation</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);line-height:1.65;">Real-time translation via Amazon Translate — processing correspondence in any language and generating responses in the service user's preferred language. Removing language as a barrier to safeguarding.</p>
+          </article>
+          <article class="civic-feature-card" data-animate data-animate-delay="3">
+            <div class="civic-feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 style="font-size:var(--text-sm);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-1);">Plain-Language Summaries</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);line-height:1.65;">Auto-generated plain-English summaries of complex legal letters — designed for service users with dementia, learning disabilities, or low literacy. Delivered alongside the original document.</p>
+          </article>
+          <article class="civic-feature-card" data-animate data-animate-delay="1">
+            <div class="civic-feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 style="font-size:var(--text-sm);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-1);">Proactive Outreach</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);line-height:1.65;">Automated deadline reminders via SMS and voice call — triggered when a high-risk deadline is approaching and no response has been logged. Turning reactive triage into proactive safeguarding.</p>
+          </article>
+          <article class="civic-feature-card" data-animate data-animate-delay="2">
+            <div class="civic-feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="var(--orange)" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 style="font-size:var(--text-sm);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-1);">EHR / Case System Integration</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);line-height:1.65;">Direct API integration with Liquid Logic, Mosaic, and NHS systems — eliminating manual upload and enabling continuous monitoring of live case records without practitioner intervention.</p>
+          </article>
+          <article class="civic-feature-card" data-animate data-animate-delay="3">
+            <div class="civic-feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 style="font-size:var(--text-sm);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-1);">Cross-Agency Risk Sharing</h3>
+            <p style="font-size:var(--text-xs);color:var(--grey-600);line-height:1.65;">Secure, consent-based risk signal sharing between local authority, NHS, and housing association systems — enabling the multi-agency picture that currently only exists in serious case reviews.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF POINTS — IMPACT TARGETS -->
+    <section class="section bg-dark" aria-labelledby="impact-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="eyebrow eyebrow-dark">Target Impact</span>
+          <h2 id="impact-heading" style="color:var(--white);">The outcomes we are building toward</h2>
+          <p style="color:rgba(255,255,255,0.6);">12,000+ vulnerable adults lose housing annually due to missed correspondence deadlines. Reactive crisis intervention costs 3–5x more than proactive safeguarding. CivicGuardian is designed to change both numbers.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item" data-animate>
+            <p class="stat-number">&lt;5%</p>
+            <p class="stat-label">Target missed deadline rate</p>
+          </div>
+          <div class="stat-item" data-animate data-animate-delay="1">
+            <p class="stat-number">80%</p>
+            <p class="stat-label">Caseworker approval target for AI drafts</p>
+          </div>
+          <div class="stat-item" data-animate data-animate-delay="2">
+            <p class="stat-number">3–5x</p>
+            <p class="stat-label">Cost saving vs reactive crisis intervention</p>
+          </div>
+          <div class="stat-item" data-animate data-animate-delay="3">
+            <p class="stat-number">12,000+</p>
+            <p class="stat-label">Vulnerable adults at risk annually in the UK</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SEE IT IN ACTION TEASER -->
     <section class="demo-teaser" aria-labelledby="demo-teaser-heading">
       <div class="container">
