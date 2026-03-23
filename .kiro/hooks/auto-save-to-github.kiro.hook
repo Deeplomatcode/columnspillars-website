@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Auto-save to GitHub",
+  "description": "After every agent session, stages all changes, commits with a WIP message, and pushes to origin main",
+  "version": "1",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "git add . && git commit -m \"Auto-save: work in progress\" && git push origin main"
+  }
+}
