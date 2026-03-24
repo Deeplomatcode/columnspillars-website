@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V8
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node (not used, but ignore if ever added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS artifacts
+Desktop.ini
+$RECYCLE.BIN/
+
+# Preview / local-only files
+preview.html
+css/style-grey-preview.css
+
+# Logs
+*.log
