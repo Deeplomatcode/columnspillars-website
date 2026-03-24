@@ -49,7 +49,7 @@ CivicGuardian AI is a human-in-the-loop digital safeguarding platform built on *
 - Prize pool: $250,000
 - Finalists announced at AWS re:Invent 2026
 
-**Origin:** Mohammed Bakare volunteered at Citizens Advice UK and directly experienced how fragmented social care data was failing vulnerable adults. CivicGuardian was designed to solve that problem.
+**Origin:** Mohammed Bakare volunteered at a UK Trust and with is work from the health Care sector and directly experienced how fragmented social care data was failing vulnerable adults. CivicGuardian was designed to solve that problem.
 
 **Published on AWS Builder Center:**
 [https://builder.aws.com/content/39pMA9C7qgjaIBqKJ0iAdQh2YmK/](https://builder.aws.com/content/39pMA9C7qgjaIBqKJ0iAdQh2YmK/)
