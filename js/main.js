@@ -328,3 +328,46 @@
   });
 
 }());
+
+
+// ── Badge Modals (CivicGuardian hero) ──
+(function () {
+  document.querySelectorAll('.civic-badge-btn[data-modal]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var modal = document.getElementById(btn.getAttribute('data-modal'));
+      if (modal) {
+        modal.hidden = false;
+        var closeBtn = modal.querySelector('.civic-modal-close');
+        if (closeBtn) closeBtn.focus();
+      }
+    });
+  });
+
+  document.querySelectorAll('.civic-modal-overlay').forEach(function (overlay) {
+    var closeBtn = overlay.querySelector('.civic-modal-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        overlay.hidden = true;
+        var opener = document.querySelector('[data-modal="' + overlay.id + '"]');
+        if (opener) opener.focus();
+      });
+    }
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) {
+        overlay.hidden = true;
+        var opener = document.querySelector('[data-modal="' + overlay.id + '"]');
+        if (opener) opener.focus();
+      }
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.civic-modal-overlay:not([hidden])').forEach(function (overlay) {
+        overlay.hidden = true;
+        var opener = document.querySelector('[data-modal="' + overlay.id + '"]');
+        if (opener) opener.focus();
+      });
+    }
+  });
+})();

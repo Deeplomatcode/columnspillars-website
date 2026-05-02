@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://columnsnpillars.co.uk/projects.html">
   <meta property="og:site_name" content="Columns &amp; Pillars Tech">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A0A0A'/><rect x='4' y='18' width='6' height='10' rx='1' fill='%23E8702A'/><rect x='13' y='12' width='6' height='16' rx='1' fill='%23E8702A'/><rect x='22' y='6' width='6' height='22' rx='1' fill='%23E8702A'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='4' y='6' width='24' height='14' rx='3' fill='%23E07830'/><rect x='9' y='10' width='14' height='6' rx='1.5' fill='%232a2926'/><path d='M4 20 Q16 26 28 20' fill='none' stroke='%23E07830' stroke-width='2' stroke-linecap='round'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -71,14 +71,14 @@
           <div data-animate>
             <div class="civic-status-badge" style="margin-bottom:var(--sp-3);">
               <span class="civic-status-dot" aria-hidden="true"></span>
-              AWS AIdeas 2025 · Semifinalist · Social Impact
+              AWS AIdeas 2025 · Top 50 Finalist · Social Impact
             </div>
 
             <h2 id="civicguardian-heading" style="font-size:var(--text-display-md);font-weight:800;color:var(--white);letter-spacing:-0.025em;margin-bottom:var(--sp-3);">CivicGuardian AI</h2>
 
-            <p style="font-size:var(--text-body-lg);color:rgba(255,255,255,0.75);line-height:1.75;margin-bottom:var(--sp-3);">An AI-powered safeguarding intelligence platform for local authorities, NHS Trusts, and housing associations. Synthesises fragmented case data, identifies escalating risk patterns, and surfaces prioritised alerts to practitioners — before situations reach crisis point.</p>
+            <p style="font-size:var(--text-body-lg);color:rgba(255,255,255,0.75);line-height:1.75;margin-bottom:var(--sp-3);">A multi-agent safeguarding platform built on Amazon Bedrock Nova that protects vulnerable adults from missing critical deadlines in housing, benefits, and healthcare correspondence. It reads what arrives, identifies the risk, and alerts the right person before a deadline is missed.</p>
 
-            <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:var(--sp-3);">Built on Amazon Bedrock Nova. Entered into the AWS Global 10,000 AIdeas Competition — one of the largest developer competitions in AWS history, with $250,000 in prizes and finalist recognition at AWS re:Invent 2026. Reached the semifinals in the Social Impact category.</p>
+            <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:var(--sp-3);">Top 50 Finalist in the AWS Global 10,000 AIdeas Competition. Social Impact Category.</p>
 
             <div class="tech-stack-row" role="list" aria-label="Technology stack">
               <span class="tech-pill" role="listitem">Amazon Bedrock Nova</span>
@@ -90,6 +90,8 @@
               <span class="tech-pill" role="listitem">REST API</span>
               <span class="tech-pill" role="listitem">Event-driven Architecture</span>
               <span class="tech-pill" role="listitem">Kiro (AWS Agentic IDE)</span>
+              <span class="tech-pill" role="listitem">Step Functions</span>
+              <span class="tech-pill" role="listitem">SNS + SES</span>
             </div>
 
             <div class="project-links">
@@ -157,10 +159,10 @@
         <div class="project-stats-grid">
           <div class="project-stat" data-animate>
             <p class="project-stat-value">MVP</p>
-            <p class="project-stat-label">Status · Prototype complete</p>
+            <p class="project-stat-label">Status · Prototype complete, 11 real cases processed</p>
           </div>
           <div class="project-stat" data-animate data-animate-delay="1">
-            <p class="project-stat-value">Semifinalist</p>
+            <p class="project-stat-value">Top 50 Finalist</p>
             <p class="project-stat-label">AWS AIdeas 2025</p>
           </div>
           <div class="project-stat" data-animate data-animate-delay="2">
@@ -218,19 +220,30 @@
         <div class="grid-2">
 
           <article class="project-preview-card" data-animate data-animate-delay="1">
-            <span class="project-preview-tag">In Development</span>
-            <h3 style="font-size:var(--text-heading);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-2);">Architecture Accelerator — SME Cloud Migration Framework</h3>
-            <p style="font-size:var(--text-sm);color:var(--grey-600);line-height:1.7;">A structured, repeatable AWS migration framework for growing organisations. Fixed-scope, fixed-price, 8-week delivery. Initial release targeting professional services and housing sectors.</p>
-            <a href="contact.html" class="project-preview-link">
-              Register interest
+            <span class="project-preview-tag">Architecture Design Complete</span>
+            <h3 style="font-size:var(--text-heading);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-2);">AgriData: Precision Agriculture Platform</h3>
+            <p style="font-size:var(--text-sm);color:var(--grey-600);line-height:1.7;">A GCP-native precision agriculture platform designed to ingest real-time data from IoT sensors, drones, and satellite imagery, process it through Cloud Dataflow and BigQuery, and deliver predictive analytics via Vertex AI. Architecture covers secure device ingestion through Cloud IoT Core, event-driven processing with Pub/Sub and Dataflow, ML model deployment on Vertex AI with GKE, and operational dashboards through Looker. Full architecture design and presentation completed.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin:var(--sp-2) 0;">
+              <span class="tech-badge">Google Cloud Platform</span>
+              <span class="tech-badge">Cloud IoT Core</span>
+              <span class="tech-badge">Pub/Sub</span>
+              <span class="tech-badge">Dataflow</span>
+              <span class="tech-badge">BigQuery</span>
+              <span class="tech-badge">Vertex AI</span>
+              <span class="tech-badge">GKE</span>
+              <span class="tech-badge">Cloud Armor</span>
+              <span class="tech-badge">Looker</span>
+            </div>
+            <a href="#" class="project-preview-link">
+              View architecture →
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </article>
 
           <article class="project-preview-card" data-animate data-animate-delay="2">
-            <span class="project-preview-tag">Early Concept</span>
-            <h3 style="font-size:var(--text-heading);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-2);">AI Governance Toolkit — Responsible AI for Mid-Market</h3>
-            <p style="font-size:var(--text-sm);color:var(--grey-600);line-height:1.7;">A practical governance and audit framework for organisations deploying AI in regulated environments. Covers model transparency, GDPR compliance, and decision accountability.</p>
+            <span class="project-preview-tag">Planned</span>
+            <h3 style="font-size:var(--text-heading);font-weight:700;color:var(--dark-2);margin-bottom:var(--sp-2);">Architecture Accelerator: SME Cloud Migration Framework</h3>
+            <p style="font-size:var(--text-sm);color:var(--grey-600);line-height:1.7;">A structured, repeatable AWS migration framework for growing organisations. Fixed-scope, fixed-price, 8-week delivery. Initial release targeting professional services and housing sectors.</p>
             <a href="contact.html" class="project-preview-link">
               Register interest
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -269,7 +282,7 @@
               <rect x="13" y="12" width="6" height="16" rx="1" fill="#E8702A"/>
               <rect x="22" y="6" width="6" height="22" rx="1" fill="#E8702A"/>
             </svg>
-            <span style="margin-left:10px;">Columns &amp; Pillars Tech</span>
+            <span style="margin-left:10px;">Columns &amp; Pillars</span>
           </a>
           <p class="footer-tagline">Architecture-Led AI Transformation</p>
           <p class="footer-desc" style="margin-top:var(--sp-1);">Helping organisations build the technology infrastructure that lets them lead with AI. Registered in England &amp; Wales.</p>
@@ -296,7 +309,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Columns &amp; Pillars Tech Ltd. Registered in England &amp; Wales.</p>
+        <p>© 2025 Columns &amp; Pillars Ltd. Registered in England &amp; Wales. Company No. 16649974</p>
         <p>Built on AWS · Architecture-Led by Default</p>
       </div>
     </div>
