@@ -217,8 +217,15 @@
         return;
       }
 
-      var data = {};
-      new FormData(form).forEach(function (value, key) { data[key] = value; });
+      var data = {
+        firstName: (form.querySelector('[name="first_name"]').value || '').trim(),
+        lastName: (form.querySelector('[name="last_name"]').value || '').trim(),
+        email: (form.querySelector('[name="email"]').value || '').trim(),
+        organisation: (form.querySelector('[name="organisation"]').value || '').trim(),
+        interest: (form.querySelector('[name="enquiry_type"]').value || '').trim(),
+        message: (form.querySelector('[name="message"]').value || '').trim(),
+        timeline: (form.querySelector('[name="timeline"]').value || '').trim()
+      };
 
       if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; }
 
