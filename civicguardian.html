@@ -22,14 +22,8 @@
 
   <nav class="nav" aria-label="Main navigation">
     <div class="nav-inner container">
-      <a href="index.html" class="nav-logo" aria-label="Columns &amp; Pillars Tech — Home">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect width="32" height="32" rx="6" fill="#0A0A0A"/>
-          <rect x="4" y="18" width="6" height="10" rx="1" fill="#E8702A"/>
-          <rect x="13" y="12" width="6" height="16" rx="1" fill="#E8702A"/>
-          <rect x="22" y="6" width="6" height="22" rx="1" fill="#E8702A"/>
-        </svg>
-        <span>Columns &amp; Pillars</span>
+      <a href="index.html" class="nav-logo" aria-label="Columns &amp; Pillars — Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 70" width="160" height="35" aria-label="Columns &amp; Pillars logo"><rect x="6" y="22" width="16" height="3.5" rx="1" fill="#2a2926"/><rect x="8" y="25" width="12" height="3" rx="0.8" fill="#2a2926"/><rect x="9.5" y="27.5" width="9" height="2.5" rx="0.5" fill="#2a2926"/><rect x="11" y="29.5" width="6" height="26" rx="1" fill="#2a2926"/><rect x="8.5" y="55" width="11" height="2.5" rx="0.5" fill="#2a2926"/><rect x="6" y="57" width="16" height="2.5" rx="0.8" fill="#2a2926"/><rect x="46" y="22" width="16" height="3.5" rx="1" fill="#E07830"/><rect x="48" y="25" width="12" height="3" rx="0.8" fill="#E07830"/><rect x="49.5" y="27.5" width="9" height="2.5" rx="0.5" fill="#E07830"/><rect x="51" y="29.5" width="6" height="26" rx="1" fill="#E07830"/><rect x="48.5" y="55" width="11" height="2.5" rx="0.5" fill="#E07830"/><rect x="46" y="57" width="16" height="2.5" rx="0.8" fill="#E07830"/><path d="M6 22 Q34 8 62 22" fill="none" stroke="#E07830" stroke-width="2.2" stroke-linecap="round"/><path d="M11 22 Q34 12 57 22" fill="none" stroke="#2a2926" stroke-width="0.8" stroke-linecap="round"/><rect x="30" y="7" width="8" height="5" rx="1" fill="#E07830"/><rect x="32" y="9" width="4" height="2" rx="0.5" fill="#2a2926"/><rect x="6" y="59.5" width="56" height="1.5" rx="0.5" fill="#2a2926" opacity="0.3"/><text x="78" y="38" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="400" letter-spacing="0.3" fill="#e8e5de">Columns</text><text x="78" y="56" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="400" letter-spacing="0.3" fill="#e8e5de"><tspan fill="#E07830">&amp;</tspan> Pillars</text></svg>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="index.html" class="nav-link">Home</a></li>
@@ -121,74 +115,48 @@
             </div>
           </div>
 
-          <div class="civic-mock-ui" data-animate data-animate-delay="2" aria-label="CivicGuardian AI static demo preview" style="font-size:var(--text-sm);">
+          <div class="civic-mock-ui" data-animate data-animate-delay="2" aria-label="CivicGuardian AI safeguarding alerts preview" style="font-size:var(--text-sm);">
             <div class="mock-ui-header">
               <span class="mock-dot" style="background:var(--risk-high);" aria-hidden="true"></span>
               <span class="mock-dot" style="background:var(--risk-med);" aria-hidden="true"></span>
               <span class="mock-dot" style="background:var(--risk-low);" aria-hidden="true"></span>
-              <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);margin-left:var(--sp-1);">CivicGuardian · Live Safeguarding Review</span>
-              <span class="cg-demo-label">Demo case</span>
+              <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);margin-left:var(--sp-1);">CivicGuardian · Live Safeguarding Alerts</span>
+              <span class="cg-demo-label">Static demo preview</span>
+            </div>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.06);margin-bottom:var(--sp-2);">Demo case · Human review required</p>
+
+            <!-- Alert 1 -->
+            <div class="alert-item alert-high" style="margin-bottom:var(--sp-2);">
+              <p class="alert-label">HIGH RISK · IMMEDIATE REVIEW REQUIRED</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:rgba(255,255,255,0.7);margin:6px 0 4px;">What CivicGuardian found:</p>
+              <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);line-height:1.6;margin:0 0 6px;">Missed welfare calls, GP weight-loss flag, and possible self-neglect pattern.</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:rgba(255,255,255,0.7);margin:0 0 4px;">What happens next:</p>
+              <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);line-height:1.6;margin:0 0 6px;">Risk Analyst classifies the case as HIGH. Policy Reasoner prepares a draft response. Governor checks safety, tone, deadline logic, and escalation requirements.</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:var(--orange);margin:0;">Human review: Waiting for caseworker approval before any action.</p>
             </div>
 
-            <!-- Status line -->
-            <p class="cg-status-line">Case #CG-2026-001 · All Systems Operational</p>
-
-            <!-- Processing Log -->
-            <div class="cg-section">
-              <p class="cg-section-title">Processing Log</p>
-              <div class="cg-log">
-                <p class="cg-log-entry"><span class="cg-log-tag">[INIT]</span> Document ingestion started</p>
-                <p class="cg-log-entry"><span class="cg-log-tag">[EXTRACT]</span> Text extracted from uploaded correspondence</p>
-                <p class="cg-log-entry"><span class="cg-log-tag">[DETECT]</span> Sender identified: Oxford City Council Housing Department</p>
-                <p class="cg-log-entry"><span class="cg-log-tag">[ANALYSE]</span> Deadline found: 28 February 2026</p>
-                <p class="cg-log-entry"><span class="cg-log-tag cg-tag-bedrock">[BEDROCK]</span> Risk Analyst Agent invoked with Nova Lite</p>
-                <p class="cg-log-entry"><span class="cg-log-tag cg-tag-risk">[RISK]</span> Risk level: HIGH · Confidence: 87%</p>
-                <p class="cg-log-entry"><span class="cg-log-tag cg-tag-bedrock">[BEDROCK]</span> Policy Reasoner Agent invoked with Nova Pro</p>
-                <p class="cg-log-entry"><span class="cg-log-tag">[DRAFT]</span> Response drafted using housing benefit context</p>
-                <p class="cg-log-entry"><span class="cg-log-tag">[VALIDATE]</span> Governor Agent checking safety, tone, deadline logic</p>
-                <p class="cg-log-entry cg-log-complete"><span class="cg-log-tag cg-tag-complete">[COMPLETE]</span> Analysis complete. Awaiting human approval.</p>
-              </div>
+            <!-- Alert 2 -->
+            <div class="alert-item alert-med" style="margin-bottom:var(--sp-2);">
+              <p class="alert-label">ELEVATED · REVIEW WITHIN 48 HOURS</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:rgba(255,255,255,0.7);margin:6px 0 4px;">What CivicGuardian found:</p>
+              <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);line-height:1.6;margin:0 0 6px;">Carer stress indicators across 3 contact points.</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:rgba(255,255,255,0.7);margin:0 0 4px;">What happens next:</p>
+              <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);line-height:1.6;margin:0 0 6px;">The system recommends a carer support assessment before the next visit.</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:var(--orange);margin:0;">Human review: Draft recommendation gated for human review.</p>
             </div>
 
-            <!-- Risk Assessment -->
-            <div class="cg-section">
-              <p class="cg-section-title">Risk Assessment</p>
-              <div class="cg-metrics-grid">
-                <div class="cg-metric">
-                  <p class="cg-metric-label">Urgency</p>
-                  <p class="cg-metric-value cg-val-high">HIGH</p>
-                </div>
-                <div class="cg-metric">
-                  <p class="cg-metric-label">Complexity</p>
-                  <p class="cg-metric-value cg-val-med">MEDIUM</p>
-                </div>
-                <div class="cg-metric">
-                  <p class="cg-metric-label">Confidence</p>
-                  <p class="cg-metric-value cg-val-conf">87%</p>
-                </div>
-                <div class="cg-metric">
-                  <p class="cg-metric-label">Review</p>
-                  <p class="cg-metric-value cg-val-review">HUMAN APPROVAL REQUIRED</p>
-                </div>
-              </div>
-
-              <div class="cg-priority-box">
-                <div class="cg-priority-row">
-                  <span class="cg-priority-label">Review Priority</span>
-                  <span class="cg-priority-value">IMMEDIATE</span>
-                </div>
-                <div class="cg-priority-row">
-                  <span class="cg-priority-label">Deadline</span>
-                  <span class="cg-priority-deadline">-6 days remaining</span>
-                </div>
-              </div>
+            <!-- Alert 3 -->
+            <div class="alert-item alert-low" style="margin-bottom:var(--sp-2);">
+              <p class="alert-label">MONITORING · NO IMMEDIATE ACTION</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:rgba(255,255,255,0.7);margin:6px 0 4px;">What CivicGuardian found:</p>
+              <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);line-height:1.6;margin:0 0 6px;">Medication adherence improved after the last intervention.</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:rgba(255,255,255,0.7);margin:0 0 4px;">What happens next:</p>
+              <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);line-height:1.6;margin:0 0 6px;">Low-risk case archived with audit trail. Policy Reasoner skipped to control cost.</p>
+              <p style="font-size:var(--text-xs);font-weight:600;color:var(--orange);margin:0;">Human review: Available for caseworker review if needed.</p>
             </div>
 
-            <!-- Governance -->
-            <p class="cg-governance">No action is taken until a caseworker reviews and approves the response.</p>
-
-            <!-- Footer -->
-            <p class="cg-panel-footer">Powered by AWS · Amazon Bedrock Nova · Step Functions · Human-in-the-loop</p>
+            <!-- Bottom line -->
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.6);line-height:1.6;padding-top:var(--sp-1);border-top:1px solid rgba(255,255,255,0.08);margin:0;">Guardian Loop: risk classified, context checked, response gated for human approval. No case is silently dropped.</p>
           </div>
 
         </div>
@@ -502,7 +470,7 @@
             <span class="eyebrow eyebrow-dark">Compliance &amp; Governance</span>
             <h2 id="compliance-heading" style="font-size:var(--text-display-md);font-weight:800;color:var(--white);letter-spacing:-0.025em;margin:var(--sp-2) 0 var(--sp-3);">Built for the most sensitive data in public services</h2>
             <p style="font-size:var(--text-body-lg);color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:var(--sp-3);">Vulnerable adults' case data is among the most sensitive information in existence. CivicGuardian was designed with a privacy-first architecture from day one — not retrofitted for compliance.</p>
-            <p style="font-size:var(--text-body-lg);color:rgba(255,255,255,0.65);line-height:1.75;">Every design decision — from 7-day data retention to deterministic Governor validation — was made to ensure the system could be trusted by practitioners, commissioners, and data protection officers alike.</p>
+            <p style="font-size:var(--text-body-lg);color:rgba(255,255,255,0.65);line-height:1.75;">Every design decision, from encryption at rest and lifecycle-based retention to deterministic Governor validation, was made to ensure the system could be trusted by practitioners, commissioners, and data protection officers alike.</p>
           </div>
           <div data-animate data-animate-delay="2">
             <div style="display:flex;flex-direction:column;gap:var(--sp-3);">
@@ -685,14 +653,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="nav-logo" style="margin-bottom:var(--sp-2);display:inline-flex;" aria-label="Columns &amp; Pillars Tech — Home">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="6" fill="#0A0A0A"/>
-              <rect x="4" y="18" width="6" height="10" rx="1" fill="#E8702A"/>
-              <rect x="13" y="12" width="6" height="16" rx="1" fill="#E8702A"/>
-              <rect x="22" y="6" width="6" height="22" rx="1" fill="#E8702A"/>
-            </svg>
-            <span style="margin-left:10px;">Columns &amp; Pillars</span>
+          <a href="index.html" class="nav-logo" style="margin-bottom:var(--sp-2);display:inline-flex;" aria-label="Columns &amp; Pillars — Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 70" width="140" height="30" aria-label="Columns &amp; Pillars logo"><rect x="6" y="22" width="16" height="3.5" rx="1" fill="#2a2926"/><rect x="8" y="25" width="12" height="3" rx="0.8" fill="#2a2926"/><rect x="9.5" y="27.5" width="9" height="2.5" rx="0.5" fill="#2a2926"/><rect x="11" y="29.5" width="6" height="26" rx="1" fill="#2a2926"/><rect x="8.5" y="55" width="11" height="2.5" rx="0.5" fill="#2a2926"/><rect x="6" y="57" width="16" height="2.5" rx="0.8" fill="#2a2926"/><rect x="46" y="22" width="16" height="3.5" rx="1" fill="#E07830"/><rect x="48" y="25" width="12" height="3" rx="0.8" fill="#E07830"/><rect x="49.5" y="27.5" width="9" height="2.5" rx="0.5" fill="#E07830"/><rect x="51" y="29.5" width="6" height="26" rx="1" fill="#E07830"/><rect x="48.5" y="55" width="11" height="2.5" rx="0.5" fill="#E07830"/><rect x="46" y="57" width="16" height="2.5" rx="0.8" fill="#E07830"/><path d="M6 22 Q34 8 62 22" fill="none" stroke="#E07830" stroke-width="2.2" stroke-linecap="round"/><path d="M11 22 Q34 12 57 22" fill="none" stroke="#2a2926" stroke-width="0.8" stroke-linecap="round"/><rect x="30" y="7" width="8" height="5" rx="1" fill="#E07830"/><rect x="32" y="9" width="4" height="2" rx="0.5" fill="#2a2926"/><rect x="6" y="59.5" width="56" height="1.5" rx="0.5" fill="#2a2926" opacity="0.3"/><text x="78" y="38" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="400" letter-spacing="0.3" fill="#e8e5de">Columns</text><text x="78" y="56" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="400" letter-spacing="0.3" fill="#e8e5de"><tspan fill="#E07830">&amp;</tspan> Pillars</text></svg>
           </a>
           <p class="footer-tagline">Architecture-Led AI Transformation</p>
           <p class="footer-desc" style="margin-top:var(--sp-1);">Helping mid-market organisations build the technology infrastructure that lets them lead with AI. Registered in England &amp; Wales.</p>
